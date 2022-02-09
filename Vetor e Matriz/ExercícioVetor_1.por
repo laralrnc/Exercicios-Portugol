@@ -1,47 +1,49 @@
 programa
 {
-/*
- * 	Faça um programa que crie um vetor por leitura com 5 valores de pontuação de uma
-	atividade e o escreva em seguida. Encontre após a maior pontuação e a apresente.
- */
+	//  Faça um programa que crie um vetor por leitura com 5 valores de pontuação de uma 
+	//atividade e o escreva em seguida. Encontre após a maior pontuação e a apresente
 	
 	funcao inicio()
 	{
-		real nota[5],notaMaior=0.0
-		
+		 inteiro notas[5]
+		 inteiro maior = 0
 
-		para(inteiro cont = 0; cont<5; cont++)
+	para(inteiro x=0;x<5;x++)
 		{
-			escreva("Digite sua nota: ")
-			leia(nota[cont])
-			
-			se(notaMaior <= nota[cont]){
-				notaMaior = nota[cont]
+			escreva("\nEscreva uma nota: ")
+			leia(notas[x])
+
+			se(notas[x]> maior)
+			{
+				maior = notas[x]
 			}
 			senao
 			{
-				notaMaior = notaMaior
+				maior = maior
 			}
-			
+		
 		}
+	para(inteiro x=0;x<5;x++)
+		{
+
+		escreva ("Vetor: ")
+		escreva(notas[x] + "\t")
 		
-		limpa()
-			para(inteiro i = 0; i<5; i++)
-			{
-			escreva(nota[i]+ "\t")
-			}
-		
-		escreva("\nA maior nota foi " +notaMaior)
+		}
+
+		escreva("Maior número armazenado no vetor: " + maior)
+
 	}
-}
+	}
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 598; 
+ * @POSICAO-CURSOR = 362; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {nota, 10, 7, 4}-{notaMaior, 10, 15, 9};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
